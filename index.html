@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/bd3eb1213d.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <!-- title -->
+        <div id="box">
+            <div class="title">
+                <h1>Shopping cart</h1>
+            </div>
+
+            <!-- item product -->
+            <!-- product 1 : handbag-->
+            <div class="product" >
+                <div class="button">
+                    <!-- creation of button remove -->
+                    <button class=" btn btn-secondary remove">X</button>
+                    <i class="heart fa fa-heart-o"></i>
+                </div>
+
+                <div class="image">
+                    <img src="bg.png" width="100px" height="100px" alt="bag" />
+                </div>
+
+                <div class="description">
+                    <span>Handbag</span><br>
+                    <span>Color:Pink</span>
+                </div>
+                <!-- creation of 2 button:Adjust the quantity of each item -->
+                <div class="item-quantity">
+                    <button class="  btn btn-secondary  minus">-</button>
+                    <input type="text" value="1" disabled  size="1"/>
+                    <button class=" btn btn-secondary   plus" >+</button>
+                </div>
+
+                <div class="totalPrice">$50 </div>
+            </div>
+
+            <!-- product2: shoes -->
+            <div class="product">
+                <div class="button">
+                    <!-- creation of button remove -->
+                    <button class=" btn btn-secondary  remove">X</button>
+                    <i class="heart fa fa-heart-o"></i>
+                </div>
+
+                <div class="image">
+                    <img src="shoes.png"  width="100px" height="100px" alt="shoes" />
+                </div>
+
+                <div class="description">
+                    <span>Snnikers</span><br>
+                    <span>Color:White</span>
+                </div>
+                <!-- creation of 2 button:Adjust the quantity of each item -->
+                <div class="item-quantity">
+                    <button class=" btn btn-secondary  minus">-</button>
+                    <input type="text" value="1" disabled  size="1"/>
+                    <button class=" btn btn-secondary   plus">+</button>
+                </div>
+
+                <div class="totalPrice">$100</div>
+            </div>
+
+            <!-- product 3 : scarf -->
+            <div class="product">
+                <div class="button">
+                    <!-- creation of button remove -->
+                    <button class=" btn btn-secondary  remove">X</button>
+                    <i class="heart fa fa-heart-o"></i>
+                </div>
+
+                <div class="image">
+                    <img src="sun.png" width="100px" height="70px" alt="sunglasses" />
+                </div>
+
+                <div class="description">
+                    <span>Sunglesses</span><br>
+                    <span>Color:Gray</span>
+                </div>
+
+                <!-- creation of 2 button:Adjust the quantity of each item -->
+                <div class="item-quantity">
+                    <button class=" btn btn-secondary minus">-</button>
+                    <input type="text" value="1" disabled  size="1"/>
+                    <button class=" btn btn-secondary plus">+</button>
+                </div>
+
+                <div class="totalPrice">$250 </div>
+            </div>
+            <div id="total-cost"><h3>total Price :</h3></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

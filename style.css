@@ -1,0 +1,108 @@
+body{
+    background-image:url(shopping-image.jpg) ;
+    background-size: cover;
+}
+.container{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2%;
+
+}
+
+#box{
+    height: 470px;
+    width: 550px;
+    background-color: rgb(163, 2, 18);
+    margin-top: 11%;
+    border-radius: 15px;
+}
+
+.title{
+    font-style: italic;
+    color: rgb(238,158,54);
+    margin-left: 50px;
+    border-bottom: 1px solid  rgb(253, 219, 175);
+}
+/* css of 3 product*/
+.product{
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgb(253,219,175); 
+    height: 120px;
+    padding-top: 20px;
+}
+/* css of class button: remove button+like heart */
+.button{
+    padding-top: 20px;
+    margin-left: 30px;
+}
+.remove{
+    display: inline-block;    
+}
+.heart {
+    font-size: 25px;
+    color:red;
+}
+/* css of  class description  */
+.description{
+    color: rgb(253,219,175);
+    font-size: 14px;
+    font-weight: 50px;
+    margin-top: 25px; 
+    font-weight: bolder;
+}
+/* css of 2 button + and - */
+.item-quantity{
+    margin-top: 30px;
+    color: rgb(253, 219, 175);
+    font-weight: bolder;
+} 
+.totalPrice{
+    margin-top: 30px;
+    font-weight: bolder;
+    color: rgb(253, 219, 175);
+}
+#total-cost{
+margin-left: 6%;
+color: rgb(253, 219, 175);
+font-style: italic;
+}
+
+
+
+/* responsive  */
+@media(max-width: 800px){
+    #container{
+        width: 100%;
+        height:auto;
+        overflow:hidden;
+    }
+    .product{
+        height: auto;
+        justify-content: center;
+    }
+    .image {
+        width: 100%;
+        text-align: center;
+        margin: 6px 0;
+    }
+    .item-quantity{
+        width: 100%;
+        text-align: center;
+        margin: 6px 0;
+    }
+    .description{
+        width: 100%;
+        text-align: center;
+        margin: 6px 0;
+    }
+    .button{
+        margin-right: 20px;
+    }
+    .body{
+        width: 100%;
+        height:auto;
+        overflow:hidden;
+    }
+}
+
